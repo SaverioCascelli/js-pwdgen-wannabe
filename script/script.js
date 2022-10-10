@@ -7,8 +7,12 @@
 
 
 const nomeUtente = prompt("Inserisci il tuo nome");
-const cognomeUtente = prompt("Inserisci il tuo cognome");
-const coloreUtente = prompt("Inserisci il tuo colore preferito");
+const cognomeUtente = prompt(`
+${nomeUtente} inserisci il tuo cognome
+`);
+const coloreUtente = prompt(`
+${nomeUtente}  ${cognomeUtente}  inserisci il tuo colore preferito
+`);
 
 const PASSWORD = nomeUtente + cognomeUtente + coloreUtente + 22;
 
@@ -19,5 +23,3 @@ document.getElementById("password").innerHTML =`
     la tua password è : ${PASSWORD}
     `;
 
-// document.getElementById('asd').innerHTML = "yas";
-// const anniUtente = parseInt(prompt('Quanti anni hai?'));
